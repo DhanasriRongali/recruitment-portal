@@ -15,14 +15,14 @@ const SignupForm = ({ onFlip }: SignupFormProps) => {
   };
 
   return (
-    <div className="glass w-full p-8 rounded-2xl shadow-xl">
-      <div className="space-y-6">
+    <div className="glass w-full p-10 rounded-2xl shadow-xl">
+      <div className="space-y-8">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900">Create Account</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Create Account</h1>
           <p className="text-sm text-gray-600 mt-2">Sign up to get started</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
             <label className="text-sm font-medium text-gray-700" htmlFor="name">
               Name
@@ -31,7 +31,7 @@ const SignupForm = ({ onFlip }: SignupFormProps) => {
               id="name"
               type="text"
               placeholder="Enter your name"
-              className="input-animation w-full"
+              className="input-animation w-full h-11"
               required
             />
           </div>
@@ -44,7 +44,7 @@ const SignupForm = ({ onFlip }: SignupFormProps) => {
               id="email"
               type="email"
               placeholder="Enter your email"
-              className="input-animation w-full"
+              className="input-animation w-full h-11"
               required
             />
           </div>
@@ -57,7 +57,7 @@ const SignupForm = ({ onFlip }: SignupFormProps) => {
               id="password"
               type="password"
               placeholder="Choose a password"
-              className="input-animation w-full"
+              className="input-animation w-full h-11"
               required
             />
           </div>
@@ -67,7 +67,7 @@ const SignupForm = ({ onFlip }: SignupFormProps) => {
               Role
             </label>
             <Select>
-              <SelectTrigger className="w-full input-animation">
+              <SelectTrigger className="w-full input-animation h-11">
                 <SelectValue placeholder="Select your role" />
               </SelectTrigger>
               <SelectContent>
@@ -78,7 +78,7 @@ const SignupForm = ({ onFlip }: SignupFormProps) => {
             </Select>
           </div>
 
-          <Button className="w-full button-animation" type="submit">
+          <Button className="w-full h-11 button-animation text-base" type="submit">
             Sign up
           </Button>
         </form>

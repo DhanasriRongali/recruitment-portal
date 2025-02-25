@@ -11,7 +11,7 @@ const AuthCard = () => {
   };
 
   return (
-    <div className="w-full max-w-md perspective">
+    <div className="w-full max-w-[450px] perspective">
       <div className={`flip-card ${isFlipped ? 'flipped' : ''}`}>
         <div className="flip-card-front">
           <LoginForm onFlip={handleFlip} />
