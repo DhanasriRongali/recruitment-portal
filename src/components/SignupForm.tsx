@@ -15,7 +15,7 @@ const SignupForm = ({ onFlip }: SignupFormProps) => {
   };
 
   return (
-    <div className="glass w-full p-10 rounded-2xl shadow-xl">
+    <div className="glass w-full p-12 rounded-2xl shadow-xl">
       <div className="space-y-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900">Create Account</h1>
