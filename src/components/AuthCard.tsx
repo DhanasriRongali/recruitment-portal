@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
@@ -11,7 +10,7 @@ const AuthCard = () => {
   };
 
   return (
-    <div className="w-full max-w-[600px] perspective">
+    <div className="w-full flex justify-center perspective">
       <div className={`flip-card ${isFlipped ? 'flipped' : ''}`}>
         <div className="flip-card-front">
           <LoginForm onFlip={handleFlip} />
